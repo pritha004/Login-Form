@@ -1,51 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    padding: 10px;;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
 }
 
-.formContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 25rem;
-    background-color: #85586F;
-    color: white;
-    border-radius: 40px;
-    box-shadow: 0px 0px 20px 0px #85586F;
-    padding: 50px 0px;
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25rem;
+  background-color: #85586f;
+  color: white;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px 0px #85586f;
+  padding: 50px 0px;
 }
 
-.loginTitle{
-    font-size: 2rem;
-    margin-bottom: 2rem;
+.loginTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.userName, .userPassword{
-    margin: 0.5rem 0px;
-    padding: 1rem 2rem;
-    border-radius: 3rem;;
-    text-align: center;
-    width: 15rem;
-    font-size: 1.2rem;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    outline: none;
-    transition: all .2s ease-in-out;
+.userName,
+.userPassword {
+  margin: 0.5rem 0px;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  width: 15rem;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .userName:focus,
 .userPassword:focus {
+  width: 20rem;
+}
+
+.loginBtn {
+  background-color: transparent;
+  color: white;
+  margin-top: 1.5rem;
+  width: 10rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  border: 2px solid white;
+  outline: none;
+}
+
+.loginBtn:hover {
+  background-color: #f8ede3;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .formContainer {
     width: 20rem;
+  }
+
+  .userName,
+  .userPassword {
+    width: 15rem;
+  }
+
+  .userName:focus,
+  .userPassword:focus {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .formContainer {
+    width: 14rem;
+  }
+
+  .userName,
+  .userPassword {
+    width: 10rem;
+  }
+
+  .userName:focus,
+  .userPassword:focus {
+    width: 12rem;
+  }
 }
